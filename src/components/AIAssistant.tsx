@@ -24,7 +24,7 @@ const QUESTIONS = [
 export default function AIAssistant() {
     const [isOpen, setIsOpen] = useState(false);
     const [step, setStep] = useState(0);
-    const [userData, setUserData] = useState<Record<string, string>>({});
+    const [, setUserData] = useState<Record<string, string>>({});
     const [messages, setMessages] = useState<Message[]>([
         { id: 1, text: "Welcome to ICONNECT TECH SOLUTIONS 🚀 I’m your AI career assistant, here to guide you into the world of DOTNET Full Stack Development. Let’s unlock your future — starting with a few quick questions.", sender: 'assistant' }
     ]);
