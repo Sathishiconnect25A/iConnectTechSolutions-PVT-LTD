@@ -31,8 +31,8 @@ export default function Footer() {
                 </div>
                 <div className="footer-contact">
                     <h4>Contact Us</h4>
-                    <p><FaMapMarkerAlt /> 7-1-401/A, near Bahar Cafe, Srinivasa Nagar, Ameerpet,
-                        Hyderabad, Telangana 500038.</p>
+                    <p><FaMapMarkerAlt /> <a href="https://maps.app.goo.gl/QaJqTkbbic5HeCaK8" target="_blank" rel="noopener noreferrer">7-1-401/A, near Bahar Cafe, Srinivasa Nagar, Ameerpet,
+                        Hyderabad, Telangana 500038.</a></p>
                     <p><FaEnvelope /> theiconnect.org@gmail.com</p>
                     <p><FaPhoneAlt /> 040-31564877 / 9052592492</p>
                     <p><FaGlobe /> www.theiconnect.org</p>

@@ -3,7 +3,9 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Internships from './components/Internships';
 import About from './components/About';
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import AIAssistant from './components/AIAssistant';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <Services />
         <Internships />
         <About />
+        <Gallery />
       </main>
       <Footer />
+      <AIAssistant />
     </>
   );
 }

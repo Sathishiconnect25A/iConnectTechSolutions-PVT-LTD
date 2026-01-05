@@ -35,7 +35,7 @@ export default function Header() {
     return (
         <header style={headerStyle}>
             <div className="container nav-container">
-                <a href="#" className="logo">
+                <a href="#" className="logo" onClick={closeMenu}>
                     <img src={logo} alt="ICONNECT Tech Solutions Logo" />
                     <span className="logo-text">ICONNECT <span className="highlight">TECH SOLUTIONS</span></span>
                 </a>
@@ -45,7 +45,8 @@ export default function Header() {
                         <li><a href="#services" onClick={closeMenu}>Services</a></li>
                         <li><a href="#programs" onClick={closeMenu}>Internships</a></li>
                         <li><a href="#about" onClick={closeMenu}>About</a></li>
-                        <li><a href="#contact" className="btn-primary" onClick={closeMenu}>Contact Us</a></li>
+                        <li><a href="#gallery" onClick={closeMenu}>Gallery</a></li>
+                        <li><a href="#contact" className="btn-secondary" onClick={closeMenu}>Contact Us</a></li>
                     </ul>
                     <div className="menu-toggle" onClick={toggleMenu}>
                         {isMenuOpen ? <FaTimes /> : <FaBars />}
