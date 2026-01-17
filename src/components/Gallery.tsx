@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
 import office1 from '../assets/office-1.jpg';
 import office2 from '../assets/office-2.jpg';
 import office3 from '../assets/office-3.jpg';
@@ -11,6 +13,8 @@ const images = [
 ];
 
 export default function Gallery() {
+    const [selectedImg, setSelectedImg] = useState<string | null>(null);
+
     return (
         <section id="gallery" className="section">
             <div className="container">
@@ -20,7 +24,7 @@ export default function Gallery() {
                 </div>
                 <div className="gallery-grid">
                     {images.map((img, index) => (
-                        <div key={index} className="gallery-item">
+                        <div key={index} className="gallery-item" onClick={() => setSelectedImg(img.src)}>
                             <img src={img.src} alt={img.alt} />
                             <div className="gallery-overlay">
                                 <span>{img.alt}</span>
@@ -29,6 +33,17 @@ export default function Gallery() {
                     ))}
                 </div>
             </div>
+
+            {selectedImg && (
+                <div className="gallery-modal-overlay" onClick={() => setSelectedImg(null)}>
+                    <div className="gallery-modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="gallery-modal-close" onClick={() => setSelectedImg(null)}>
+                            <FaTimes />
+                        </button>
+                        <img src={selectedImg} alt="Gallery Preview" className="gallery-modal-image" />
+                    </div>
+                </div>
+            )}
         </section>
     );
 }

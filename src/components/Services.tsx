@@ -9,25 +9,25 @@ export default function Services() {
                     <p>Comprehensive technology solutions tailored to your business needs.</p>
                 </div>
                 <div className="services-grid">
-                    <div className="card service-card">
+                    <div className="card">
                         <div className="icon-box"><FaCode /></div>
-                        <h3>Software Development</h3>
-                        <p>Building Realtime Projects from scratch using C#, .NET Core, ASP.NET Core MVC.</p>
+                        <h3>Full-Stack Solutions</h3>
+                        <p>End-to-end development using .NET Core and modern frontend frameworks for scalable applications.</p>
                     </div>
-                    <div className="card service-card">
+                    <div className="card">
                         <div className="icon-box"><FaDatabase /></div>
-                        <h3>Data Management</h3>
-                        <p>Robust database solutions using ADO.NET, EF Core, and SQL Server.</p>
+                        <h3>Cloud & Architecture</h3>
+                        <p>Modern cloud-native architectures with EF Core and SQL Server for enterprise-grade data management.</p>
                     </div>
-                    <div className="card service-card">
+                    <div className="card">
                         <div className="icon-box"><FaTasks /></div>
-                        <h3>Project Management</h3>
-                        <p>Agile Scrum methodologies and Azure DevOps for efficient project delivery.</p>
+                        <h3>Agile Ecosystem</h3>
+                        <p>Streamlined delivery with Agile Scrum, Azure DevOps, and professional project lifecycle management.</p>
                     </div>
-                    <div className="card service-card">
+                    <div className="card">
                         <div className="icon-box"><FaMobileAlt /></div>
-                        <h3>Mobile & Web Apps</h3>
-                        <p>Full Stack Web Development tailored for modern business requirements.</p>
+                        <h3>Digital Innovation</h3>
+                        <p>Transforming complex business requirements into high-performance web and mobile experiences.</p>
                     </div>
                 </div>
             </div>

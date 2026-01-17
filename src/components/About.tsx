@@ -3,32 +3,32 @@ export default function About() {
         <section id="about" className="section">
             <div className="container about-container">
                 <div className="about-text">
-                    <h2 className="text-gradient">About ICONNECT</h2>
-                    <p><strong>ICONNECT TECH SOLUTIONS</strong> is a premier technology firm dedicated to bridging the gap between academic theory and industry excellence. We specialize in empowering aspiring developers through immersive, real-world project experiences.</p>
+                    <h2 className="text-gradient">Innovating Technical Excellence</h2>
+                    <p><strong>ICONNECT TECH SOLUTIONS</strong> is a premium technology partner dedicated to bridging the global engineering gap. We transform academic foundations into industry-ready expertise through immersive, project-driven mentorship.</p>
 
                     <div className="about-row">
                         <div className="about-col">
-                            <h4>Our Mission</h4>
-                            <p>To cultivate the next generation of software leaders by providing professional mentorship and hands-on exposure to modern tech stacks.</p>
+                            <h4>Our Purpose</h4>
+                            <p>To architect a future where every aspiring developer has the ecosystem to master modern technological complexities with professional confidence.</p>
                         </div>
                         <div className="about-col">
-                            <h4>Our Vision</h4>
-                            <p>To be the leading catalyst for technical growth, fostering a community where innovation and practical expertise converge.</p>
+                            <h4>Our Strategy</h4>
+                            <p>By integrating real-world delivery pipelines with expert mentorship, we ensure our graduates lead the industry in technical innovation.</p>
                         </div>
                     </div>
 
                     <div className="about-stats">
                         <div className="stat-item">
-                            <h3>Realtime</h3>
-                            <p>Projects</p>
+                            <h3>50+</h3>
+                            <p>Real-time Projects</p>
                         </div>
                         <div className="stat-item">
-                            <h3>Expert</h3>
-                            <p>Mentorship</p>
+                            <h3>100%</h3>
+                            <p>Hands-on Support</p>
                         </div>
                         <div className="stat-item">
-                            <h3>Industry</h3>
-                            <p>Standard</p>
+                            <h3>Elite</h3>
+                            <p>Professional Mentees</p>
                         </div>
                     </div>
                 </div>

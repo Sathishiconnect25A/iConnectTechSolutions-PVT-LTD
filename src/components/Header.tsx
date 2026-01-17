@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
-export default function Header() {
+interface HeaderProps {
+    onOpenInternship: () => void;
+}
+
+export default function Header({ onOpenInternship }: HeaderProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,14 +30,14 @@ export default function Header() {
         setIsMenuOpen(false);
     };
 
-    // Dynamic styles based on scroll state to match original script behavior
-    const headerStyle = isScrolled ? {
-        height: '70px',
-        boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)'
-    } : {}; // Default styles from CSS are fine for non-scrolled state (height: 90px)
+    const handleInternshipClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        closeMenu();
+        onOpenInternship();
+    };
 
     return (
-        <header style={headerStyle}>
+        <header className={isScrolled ? 'scrolled' : ''}>
             <div className="container nav-container">
                 <a href="#" className="logo" onClick={closeMenu}>
                     <img src={logo} alt="ICONNECT Tech Solutions Logo" />
@@ -43,10 +47,11 @@ export default function Header() {
                     <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                         <li><a href="#home" onClick={closeMenu}>Home</a></li>
                         <li><a href="#services" onClick={closeMenu}>Services</a></li>
-                        <li><a href="#programs" onClick={closeMenu}>Internships</a></li>
+                        <li><a href="#programs" onClick={handleInternshipClick}>Internships</a></li>
                         <li><a href="#about" onClick={closeMenu}>About</a></li>
                         <li><a href="#gallery" onClick={closeMenu}>Gallery</a></li>
                         <li><a href="#contact" className="btn-secondary" onClick={closeMenu}>Contact Us</a></li>
+                        <li><button className="btn-primary" onClick={handleInternshipClick}>Apply Now</button></li>
                     </ul>
                     <div className="menu-toggle" onClick={toggleMenu}>
                         {isMenuOpen ? <FaTimes /> : <FaBars />}
